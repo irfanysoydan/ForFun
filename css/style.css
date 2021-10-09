@@ -478,6 +478,7 @@ ul {
     width: 0%;
     height: 0%;
     opacity: 0;
+    overflow: hidden;
     transition: var(--transition-effect);
 }
 
@@ -653,7 +654,7 @@ ul.omer-icon-list li:nth-child(2) a:hover {
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: 300;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .name,
@@ -665,7 +666,7 @@ ul.omer-icon-list li:nth-child(2) a:hover {
     border-bottom: .1rem solid var(--light-color);
     min-width: 100%;
     max-width: 100%s;
-    padding: 2rem .5rem;
+    padding: 1.5rem .5rem;
     color: var(--light-color);
 }
 
@@ -675,4 +676,104 @@ ul.omer-icon-list li:nth-child(2) a:hover {
 
 .btn-send {
     margin-top: 2rem;
+}
+
+
+/** Footer Section**/
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 2rem 0;
+}
+
+.about-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.social-media h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    white-space: nowrap;
+}
+
+.social-list {
+    display: flex;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+.social-list li {
+    padding: 0;
+    text-align: center;
+}
+
+.social-list li a {
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    transition: var(--transition-effect);
+}
+
+.social-list li i {
+    line-height: 3rem;
+    transition: var(--transition-effect);
+}
+
+.social-list li a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.social-list li i:hover {
+    color: var(--dark-color);
+}
+
+.copy-right {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.go-top {
+    justify-self: end;
+    text-align: center;
+}
+
+.go-top i {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    transition: var(--transition-effect);
+}
+
+.go-top a {
+    display: inline-block;
+    border: .1rem solid var(--light-color);
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    transition: var(--transition-effect);
+}
+
+.go-top a:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.go-top i:hover {
+    color: var(--dark-color);
 }
