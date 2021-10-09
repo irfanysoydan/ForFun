@@ -146,6 +146,7 @@ ul {
     border: 2px solid var(--light-color);
     transition: var(--transition-effect);
     border-radius: 4rem;
+    padding: 0 1rem;
 }
 
 .button-dark:hover {
@@ -555,6 +556,8 @@ ul.omer-icon-list li:nth-child(2) a:hover {
 .hikmet-posts {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hikmet-detail {
@@ -627,4 +630,49 @@ ul.omer-icon-list li:nth-child(2) a:hover {
     height: 3.5rem;
     width: auto;
     border-radius: 50%;
+}
+
+
+/** Contact Section **/
+
+#contact-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content h2 {
+    color: var(--light-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+
+.name,
+.email,
+.message {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: .1rem solid var(--light-color);
+    min-width: 100%;
+    max-width: 100%s;
+    padding: 2rem .5rem;
+    color: var(--light-color);
+}
+
+::placeholder {
+    color: var(--light-color);
+}
+
+.btn-send {
+    margin-top: 2rem;
 }
