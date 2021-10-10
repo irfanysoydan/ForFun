@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Page</title>
 
+    <script src="jquery-3.6.0.min.js"></script>
     <!-- Fontawesome Link-->
-
     <script src="https://kit.fontawesome.com/c8b854edf0.js" crossorigin="anonymous"></script>
+
+    <!--Fancbox Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -23,10 +26,10 @@
     <section id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="main-title">OSTRCIH</h1>
-                <p class="slogan">It Can Fly But Can't Fly</p>
+                <h1 class="main-title ani-fade-up ani-delay-1">OSTRCIH</h1>
+                <p class="slogan ani-fade-up ani-delay-2">It Can Fly But Can't Fly</p>
                 <div class="arrows">
-                    <a href="#">
+                    <a href="#about-section">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -45,12 +48,12 @@
     <!-- Header Section -->
 
     <header>
-        <nav class="nav">
+        <nav class="nav ani-fade-up ani-delay-0">
             <div class="container navbar">
-                <a href="#" class="logo">OSTRICH</a>
+                <a href="#hero" class="logo">OSTRICH</a>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"> Home</a>
+                        <a href="#hero" class="nav-link"> Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#about-section" class="nav-link"> About</a>
@@ -94,8 +97,8 @@
         <div class="container">
             <div class="about-content sec-grid">
                 <div class="about-info">
-                    <h2 class="vertical-title">The Game</h2>
-                    <div class="about-detail">
+                    <h2 class="vertical-title ani-delay-2 ani-right">The Game</h2>
+                    <div class="about-detail ani-delay-1 ani-left">
                         <h2 class="horizontal-title">OUR STORY</h2>
                         <p> One night, Recep, Hikmet, Ömer and me went to Irlamaz Promenade for playing Tabu. My teammate is Hikmet so i was telling the "Ostirch" words. Hikmet's mission is my understand what I'm told. While telling the word i said this sentence;
                             "It can fly but can't fly." To be continued...
@@ -103,7 +106,7 @@
                         <button class="continue-button button-light">Continue</button>
                     </div>
                 </div>
-                <div class="about-image">
+                <div class="about-image ani-delay-0 ani-fade-up">
                     <img src="./img/Ostrich.jpg">
                 </div>
             </div>
@@ -119,12 +122,12 @@
     <section id="irfan-section" class="primary-background">
         <div class="container">
             <div class="about-irfan sec-grid">
-                <div class="irfan-image">
+                <div class="irfan-image ani-delay-0 ani-fade-up">
                     <img src="./img/İrfan.jpg">
                 </div>
                 <div class="irfan-info">
-                    <h2 class="vertical-title vertical-title-right">The Gamer</h2>
-                    <div class="irfan-detail">
+                    <h2 class="vertical-title vertical-title-right ani-delay-2 ani-left">The Gamer</h2>
+                    <div class="irfan-detail ani-delay-1 ani-right">
                         <div class="irfan-slider">
                             <div class="irfan-slide irfan-slide-1">
                                 <h2 class="horizontal-title light-color">İRFAN'S STORY</h2>
@@ -294,14 +297,14 @@
 
     <section id="photos-section">
         <div class="photos-items">
-            <a href="./img/Photos1.jpg" class="photos-item photos-item-1"><span>&#9741</span></a>
-            <a href="./img/Photos2.jpg" class="photos-item photos-item-2"><span>&#9741</span></a>
-            <a href="./img/Photos3.jpg" class="photos-item photos-item-3"><span>&#9741</span></a>
-            <a href="./img/Photos4.jpg" class="photos-item photos-item-4"><span>&#9741</span></a>
-            <a href="./img/Photos5.jpg" class="photos-item photos-item-5"><span>&#9741</span></a>
-            <a href="./img/Photos6.jpg" class="photos-item photos-item-6"><span>&#9741</span></a>
-            <a href="./img/Photos7.jpg" class="photos-item photos-item-7"><span>&#9741</span></a>
-            <a href="./img/Photos8.jpg" class="photos-item photos-item-8"><span>&#9741</span></a>
+            <a href="./img/Photos1.jpg" data-fancybox="gallery" class="photos-item photos-item-1 ani-delay-0 ani-fade-up"><span>&#9741</span></a>
+            <a href="./img/Photos2.jpg" data-fancybox="gallery" class="photos-item photos-item-2 ani-delay-0 ani-fade-up"><span>&#9741</span></a>
+            <a href="./img/Photos3.jpg" data-fancybox="gallery" class="photos-item photos-item-3 ani-fade-up"><span>&#9741</span></a>
+            <a href="./img/Photos4.jpg" data-fancybox="gallery" class="photos-item photos-item-4 ani-fade-up"><span>&#9741</span></a>
+            <a href="./img/Photos5.jpg" data-fancybox="gallery" class="photos-item photos-item-5 ani-fade-up"><span>&#9741</span></a>
+            <a href="./img/Photos6.jpg" data-fancybox="gallery" class="photos-item photos-item-6 ani-fade-up"><span>&#9741</span></a>
+            <a href="./img/Photos7.jpg" data-fancybox="gallery" class="photos-item photos-item-7 ani-fade-up"><span>&#9741</span></a>
+            <a href="./img/Photos8.jpg" data-fancybox="gallery" class="photos-item photos-item-8 ani-fade-up"><span>&#9741</span></a>
         </div>
     </section>
 
@@ -311,9 +314,9 @@
 
     <section id="contact-section" class="primary-background">
         <div class="container">
-            <div class="contact-content">
-                <h2>If You Wanna Fly You Can Don't Fly</h2>
-                <form>
+            <div class="contact-content ">
+                <h2 class="ani-delay-0 ani-fade-up">If You Wanna Fly You Can Don't Fly</h2>
+                <form class="ani-bottom ani-delay-1">
                     <input type="text" class="name" placeholder="Your Name">
                     <input type="email" class="email" placeholder="Your Email">
                     <textarea class="message" placeholder="Your Message"></textarea>
@@ -355,6 +358,23 @@
 
     <!-- END Footer Section -->
 
+
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- END Fancybox JS -->
+
+    <!-- Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- End Scroll Reveal -->
+
+
+
+
+
+    <!-- Custom JS -->
+
+    <script src="./js/script.js"></script>
+    <!-- End Custom JS -->
 </body>
 
 </html>
