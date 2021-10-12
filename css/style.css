@@ -22,6 +22,8 @@ font-family: 'Yaldevi', sans-serif;
     --light-color: #efefef;
     --dark-color: #070606;
     --transition-effect: all .4s ease;
+    --pad-right: 4rem;
+    --pad-left: 4rem;
 }
 
 html {
@@ -29,6 +31,7 @@ html {
     color: var(--dark-color);
     font-family: var(--primary-font);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section {
@@ -290,7 +293,7 @@ ul {
 }
 
 
-/** LOGO **/
+/* LOGO */
 
 .logo {
     font-size: 4rem;
@@ -330,14 +333,14 @@ ul {
 }
 
 
-/** About Section**/
+/* About Section*/
 
 .about-detail {
     margin-left: 4rem;
 }
 
 
-/** İrfan Section **/
+/* İrfan Section */
 
 .irfan-detail {
     margin-right: 4rem;
@@ -506,7 +509,7 @@ ul {
 
 .omer-image-info p {
     color: var(--light-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1.5rem 0;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -548,6 +551,98 @@ ul.omer-icon-list li:nth-child(2) a:hover {
 }
 
 .omer-detail {
+    margin-left: 4rem;
+}
+
+
+/**Recep Section **/
+
+.recep-images {
+    display: flex;
+}
+
+.recep-image {
+    position: relative;
+}
+
+.recep-overlay {
+    background-color: rgba(165, 63, 68, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    overflow: hidden;
+    transition: var(--transition-effect);
+}
+
+.recep-image-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recep-image:hover .recep-overlay {
+    width: 100%;
+    height: 98.8%;
+    opacity: 1;
+}
+
+.recep-image-info h5 {
+    color: var(--light-color);
+    font-size: 1.3rem;
+    font-family: var(--secondary-font);
+    letter-spacing: .2rem;
+}
+
+.recep-image-info p {
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+ul.recep-icon-list {
+    display: flex;
+    line-height: 3.4rem;
+    text-align: center;
+}
+
+.recep-icon-list li {
+    padding: 0;
+}
+
+.recep-icon-list li a {
+    border: 1px solid var(--light-color);
+    border-radius: 50%;
+    display: inline-block;
+    height: 3.2rem;
+    width: 3.2rem;
+    margin: 0 .5rem;
+    transition: var(--transition-effect);
+}
+
+.recep-icon-list li i {
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+ul.recep-icon-list li:nth-child(1) a:hover {
+    background-color: #0c6396;
+    border-color: #0c6396;
+}
+
+ul.recep-icon-list li:nth-child(2) a:hover {
+    background-color: #ca750c;
+    border-color: #ca750c;
+}
+
+.recep-detail {
     margin-left: 4rem;
 }
 
@@ -776,4 +871,83 @@ footer {
 
 .go-top i:hover {
     color: var(--dark-color);
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:992px) {
+    .navbar-toggler {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-list {
+        display: block;
+        position: absolute;
+        top: 8rem;
+        left: 0;
+        background-color: var(--primary-color);
+        width: 50%;
+        height: 100vh;
+        opacity: .95;
+        transition: var(--transition-effect);
+        transform: translateX(-100%);
+    }
+    li.nav-item {
+        padding-top: 2rem;
+    }
+    .navbar {
+        justify-content: space-around;
+    }
+    a.nav-link:hover::after {
+        width: 25%;
+    }
+    .main-title {
+        font-size: 6rem;
+    }
+    .slogan {
+        font-size: 1.2rem;
+        letter-spacing: 1rem;
+    }
+    .vertical-title {
+        display: none;
+    }
+    .horizontal-title {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: .9rem;
+        line-height: 1.3rem;
+    }
+    .about-content,
+    .about-recep,
+    .about-omer {
+        padding-right: var(--pad-right);
+    }
+    .about-irfan,
+    .about-hikmet {
+        padding-left: var(--pad-left);
+    }
+    .copy-right {
+        padding-left: var(--pad-left);
+    }
+    .go-top {
+        padding-right: var(--pad-right);
+    }
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-10px, 9px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-7px, -6px);
 }
