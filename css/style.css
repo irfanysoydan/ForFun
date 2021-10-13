@@ -15,7 +15,7 @@ font-family: 'Yaldevi', sans-serif;
     box-sizing: border-box;
 }
 
-:root {
+ :root {
     --primary-font: 'Yaldevi', sans-serif;
     --secondary-font: 'Roboto', sans-serif;
     --primary-color: #a53f44;
@@ -348,6 +348,15 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+#irfan-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.irfan-slide {
+    min-width: 100%;
 }
 
 .btn-arrows {
@@ -765,7 +774,7 @@ ul.recep-icon-list li:nth-child(2) a:hover {
     color: var(--light-color);
 }
 
-::placeholder {
+ ::placeholder {
     color: var(--light-color);
 }
 
@@ -936,12 +945,67 @@ footer {
     }
 }
 
+@media only screen and (max-width:768px) {
+    .main-title {
+        font-size: 5rem;
+    }
+    .slogan {
+        font-size: 1rem;
+        letter-spacing: 0.8rem;
+    }
+    .sec-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        position: relative;
+    }
+    .about-image {
+        padding-left: var(--pad-left);
+    }
+    .irfan-image {
+        padding-right: var(--pad-right);
+    }
+    .recep-images {
+        padding-left: var(--pad-left);
+    }
+    .hikmet-posts {
+        padding-right: var(--pad-right);
+    }
+    .omer-images {
+        padding-left: var(--pad-left);
+    }
+    .photos-items {
+        grid-template-areas: 'item-1 item-1 item-1 item-1' 'item-4 item-4 item-5 item-5 ' 'item-7 item-7 item-8 item-8' 'item-3 item-3 item-6 item-6' 'item-2 item-2 item-2 item-2';
+    }
+    .contact-content h2 {
+        font-size: 2rem;
+    }
+    .about-footer {
+        grid-template-columns: 1fr;
+    }
+    .copy-right,
+    .go-top,
+    .social-media {
+        justify-self: center;
+        margin: .5rem 0;
+    }
+    .go-top {
+        padding-right: 0;
+    }
+    .copy-right {
+        padding-left: 0;
+    }
+    .social-media {
+        padding-left: 0;
+    }
+}
+
 .nav-active {
     transform: translateX(0);
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-10px, 9px);
+    transform: rotate(-47deg) translate(-10.2px, 9.2px);
 }
 
 .toggle .line2 {
@@ -949,5 +1013,5 @@ footer {
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-7px, -6px);
+    transform: rotate(45deg) translate(-7px, -6.5px);
 }

@@ -12,6 +12,26 @@ const navMenu = () => {
 
 navMenu();
 
+/* İrfan Slider */
+const sliderChange = () => {
+    let firstChild, lastChild;
+    const arrowLeft = document.querySelector('#left-arrow');
+    const arrowRight = document.querySelector('#right-arrow');
+    const irfanAll = document.querySelector('#irfan-slider')
+
+    arrowLeft.addEventListener('click', () => {
+        lastChild = irfanAll.lastElementChild;
+        irfanAll.insertAdjacentElement('afterbegin', lastChild)
+    })
+
+    arrowRight.addEventListener('click', () => {
+        firstChild = irfanAll.firstElementChild;
+        irfanAll.insertAdjacentElement('beforeend', firstChild)
+    })
+}
+
+sliderChange();
+
 
 /* Scroll Reveal Animations */
 
